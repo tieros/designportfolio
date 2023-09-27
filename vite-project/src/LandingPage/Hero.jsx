@@ -10,7 +10,7 @@ const Hero = () => (
             height={291}
             className='sm:hidden m-auto'
         />
-        <div className='m-[12px] flex items-center max-w-[1440px] lg:m-auto'>
+        <div className='m-[12px] flex items-center max-w-[1440px] lg:m-auto md:justify-between lg:justify-center'>
             <div className='font-Lalezar text-[72px] sm:text-[86px] lg:text-[96px] flex flex-col justify-center w-full items-center lg:items-start lg:px-[3%] lg:max-w-[717px] md:max-w-[400px]'>
                 <div className='flex flex-col items-center'>
                     <h1>I design</h1>
