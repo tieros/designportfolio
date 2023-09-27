@@ -4,8 +4,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                rubik: ['Rubik', 'sans-serif', 'system-ui'],
-                quicksand: ['Quicksand', 'sans-serif', 'system-ui'],
+                Lalezar: ['Lalezar', 'cursive'],
+                Poppins: ['Poppins', 'sans-serif'],
             },
             colors: {
                 pink: '#FF8ACD',
