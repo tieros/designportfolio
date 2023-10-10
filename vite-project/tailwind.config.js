@@ -16,6 +16,13 @@ export default {
                 reddish: '#FF7262',
                 bg: '#FFFFFC',
             },
+            screens: {
+                '2xl': '1440px;',
+            },
+            boxShadow: {
+                large: '2px 3px 0px 0px #000;',
+                tag: ' 2px 2px 0px 0px #000;',
+            },
         },
     },
     plugins: [],

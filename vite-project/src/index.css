@@ -16,3 +16,31 @@ p {
     line-height: 150%;
     letter-spacing: 0.6px;
 }
+
+.custom-container {
+    padding: 0 94px;
+    max-width: 1440px;
+    margin: auto;
+
+    @media (max-width: 1240px) {
+        padding: 0 40px;
+    }
+    @media (max-width: 640px) {
+        padding: 0 32px;
+    }
+}
+/* HEADINGS FOR LANDING PAGE */
+
+h1 {
+    font-size: 120px !important;
+    line-height: 101.7%; /* 122.04px */
+    letter-spacing: 2.4px;
+    font-family: 'Lalezar';
+
+    @media (max-width: 1024px) {
+        font-size: 80px !important;
+    }
+    @media (max-width: 640px) {
+        font-size: 64px !important;
+    }
+}
