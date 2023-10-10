@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Button = ({ children }) => (
     <button
         className='w-full flex py-[16px] px-[40px] items-center 
@@ -8,5 +10,9 @@ const Button = ({ children }) => (
         {children}
     </button>
 );
+
+Button.propTypes = {
+    children: PropTypes.node,
+};
 
 export default Button;
