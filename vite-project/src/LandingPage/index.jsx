@@ -2,6 +2,7 @@ import Hero from './Hero';
 import { Link } from 'react-router-dom';
 import Work from './Work';
 import MyStory from './MyStory';
+import Contact from './Contact';
 const LandingPage = () => (
     <div className='custom-container'>
         <header className='flex justify-center relative lg:w-{1440px] max-w-[1440px] m-auto'>
@@ -15,6 +16,7 @@ const LandingPage = () => (
         <Hero />
         <Work />
         <MyStory />
+        <Contact />
     </div>
 );
 export default LandingPage;

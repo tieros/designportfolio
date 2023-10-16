@@ -22,6 +22,8 @@ export default {
             boxShadow: {
                 large: '2px 3px 0px 0px #000;',
                 tag: ' 2px 2px 0px 0px #000;',
+                iconContainer: '3px 4px 0px #0E2624',
+                iconContainerHover: '2px 1.5px 0px #0E2624',
             },
         },
     },
