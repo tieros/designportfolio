@@ -2,7 +2,7 @@ import HeroDesktopImage from '../assets/HeroImage.png';
 import MobileHeroImage from '../assets/MobileHero.png';
 import Arrow from '../assets/heroarrow.svg?react';
 const Hero = () => (
-    <div className='flex justify-center'>
+    <div className='flex justify-center relative'>
         <div className='flex flex-col justify-center max-w-[800px] gap-4 sm:gap-0 !2xl:gap-8'>
             <img
                 src={MobileHeroImage}
@@ -21,7 +21,7 @@ const Hero = () => (
             </div>
             <Arrow className='sm:hidden self-center w-20' />
         </div>
-        <Arrow className='hidden lg:flex items-end h-[100px] self-end' />
+        <Arrow className='hidden lg:block absolute bottom-0 left-[40%] items-end h-[100px] self-end' />
         <img
             src={HeroDesktopImage}
             alt='Image of Elif and Tiera'
