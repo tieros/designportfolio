@@ -1,0 +1,30 @@
+h2 {
+    font-size: 48px !important;
+    font-family: 'Open Sans';
+
+    @media (max-width: 640px) {
+        font-size: 24px !important;
+    }
+    @media (max-width: 1024px) {
+        font-size: 32px !important;
+    }
+}
+
+.activeFunc {
+    background: black;
+    color: #f2f2f2;
+}
+
+.parallax-container {
+    height: 200%;
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax-mock {
+    transform: translateY(30%);
+}
+
+button {
+    border-radius: 8px;
+}
