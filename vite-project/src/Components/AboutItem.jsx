@@ -9,7 +9,7 @@ const AboutItem = ({ text, imageSrc }) => (
                 <div className='w-6 h-6 bg-white rounded-full'></div>
             )}
         </div>
-        <div className='ml-5 font-Poppins font-medium'>{text}</div>
+        <div className='ml-5 font-Poppins action-text'>{text}</div>
     </div>
 );
 

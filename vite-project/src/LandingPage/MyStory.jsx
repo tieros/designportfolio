@@ -1,8 +1,8 @@
 import AboutItem from '../Components/AboutItem';
 
 const MyStory = () => (
-    <div className='flex flex-col items-center'>
-        <h1>My Story</h1>
+    <section id='mystory' className='flex flex-col items-center'>
+        <h1 className='text-center mb-16'>My Story</h1>
         <div className='flex flex-col gap-5 relative'>
             <AboutItem text='2011 - Tiera came to my life' />
             <AboutItem text='2013 - I am building art & social science education, combining Theatre and Sociology.' />
@@ -15,6 +15,6 @@ const MyStory = () => (
             <AboutItem text='2023 - I am having a great time on this design tasks! Heey, new discovery found: I am a UI/UX Design lover!' />
             <AboutItem text='2023 - Challenge accepted: DESIGN CHAPTER IS HERE!' />
         </div>
-    </div>
+    </section>
 );
 export default MyStory;

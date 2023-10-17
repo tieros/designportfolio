@@ -4,8 +4,9 @@
 
 body {
     margin: 0;
-    background-color: #fffffc;
+    background-color: #fbfaf6;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 h3,
@@ -17,16 +18,32 @@ p {
     letter-spacing: 0.6px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+a {
+    z-index: 20;
+}
+
 .custom-container {
     padding: 0 94px;
     max-width: 1440px;
     margin: auto;
+    background-color: #fbfaf6;
 
-    @media (max-width: 1240px) {
+    @media (max-width: 1280px) {
         padding: 0 40px;
     }
     @media (max-width: 640px) {
-        padding: 0 32px;
+        padding: 0 12px;
+    }
+    button {
+        max-width: 300px;
     }
 }
 /* HEADINGS FOR LANDING PAGE */
@@ -42,6 +59,54 @@ h1 {
     }
     @media (max-width: 640px) {
         font-size: 64px !important;
+    }
+}
+
+p {
+    @media (min-width: 1024px) {
+        font-size: 18px !important;
+    }
+    @media (max-width: 1024px) {
+        font-size: 16px !important;
+    }
+    @media (max-width: 640px) {
+        font-size: 12px !important;
+    }
+}
+
+h4 {
+    @media (min-width: 1024px) {
+        font-size: 48px !important;
+    }
+    @media (max-width: 1024px) {
+        font-size: 32 px !important;
+    }
+    @media (max-width: 640px) {
+        font-size: 20px !important;
+    }
+}
+
+h5 {
+    @media (min-width: 1024px) {
+        font-size: 32px !important;
+    }
+    @media (max-width: 1024px) {
+        font-size: 24px !important;
+    }
+    @media (max-width: 640px) {
+        font-size: 14px !important;
+    }
+}
+
+.action-text {
+    @media (min-width: 1024px) {
+        font-size: 16px !important;
+    }
+    @media (max-width: 1024px) {
+        font-size: 14px !important;
+    }
+    @media (max-width: 640px) {
+        font-size: 13px !important;
     }
 }
 
@@ -61,6 +126,48 @@ h1 {
     }
 }
 
-.contact-icons:hover {
-    fill: rgba(0, 0, 0, 0.324);
+.footer-bg {
+    background-image: url('./assets/footershapeimage.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+
+    @media (max-width: 640px) {
+        background-image: url('./assets/mobilefooter.png');
+        background-size: 100%;
+    }
+}
+
+.noise-image {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.work-section img {
+    z-index: 20;
+}
+
+section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#mystory {
+    z-index: 20;
+}
+
+.icon-container svg {
+    @media (min-width: 1024px) {
+        width: 33px !important;
+    }
+    @media (max-width: 1024px) {
+        width: 27px !important;
+    }
+    @media (max-width: 640px) {
+        width: 24px !important;
+    }
 }

@@ -14,7 +14,7 @@ export default {
                 yellow: '#FFE959',
                 blue: '#BFF2FA',
                 reddish: '#FF7262',
-                bg: '#FFFFFC',
+                bg: '#FBFAF6',
             },
             screens: {
                 '2xl': '1440px;',
