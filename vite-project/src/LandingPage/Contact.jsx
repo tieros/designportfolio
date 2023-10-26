@@ -16,6 +16,7 @@ const Contact = () => (
             Branding | User Flow | Journey Map | User Interface | User
             Experience | Web | Mobile | Research | Branding |
         </span>
+
         <span className='p-4 text-[#EEEDD9] rotate-[-15deg] lg:rotate-[25deg] absolute top-1/2 left-[-10%] text-lg lg:text-4xl whitespace-nowrap overflow-hidden w-[400px] sm:w-[900px] lg:w-[1500px]'>
             Web | Mobile | Research | Branding | User Flow | Journey Map |
             Branding | User Experience | Web | Mobile | Research | Branding |

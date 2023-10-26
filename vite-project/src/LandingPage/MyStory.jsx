@@ -44,7 +44,7 @@ const MyStory = () => (
             <AboutItem
                 imageSrc={Code}
                 bgColor={'bg-green'}
-                text='2019 - Mm how do you create all those websites? Heey, got a new hobby and collecting all those HTML / CSS / JS certificates!'
+                text="2019 - Mm how do you make websites? I've taken up a new hobby of collecting HTML/CSS/JS certificates"
             />
             <AboutItem
                 imageSrc={Idea}

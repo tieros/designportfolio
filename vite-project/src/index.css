@@ -48,53 +48,55 @@ a {
 }
 /* HEADINGS FOR LANDING PAGE */
 
-h1 {
-    font-size: 120px !important;
-    line-height: 101.7%; /* 122.04px */
-    letter-spacing: 2.4px;
-    font-family: 'Lalezar';
+.custom-container {
+    h1 {
+        font-size: 120px !important;
+        line-height: 101.7%; /* 122.04px */
+        letter-spacing: 2.4px;
+        font-family: 'Lalezar';
 
-    @media (max-width: 1024px) {
-        font-size: 80px !important;
+        @media (max-width: 1024px) {
+            font-size: 80px !important;
+        }
+        @media (max-width: 640px) {
+            font-size: 64px !important;
+        }
     }
-    @media (max-width: 640px) {
-        font-size: 64px !important;
-    }
-}
 
-p {
-    @media (min-width: 1024px) {
-        font-size: 18px !important;
+    p {
+        @media (min-width: 1024px) {
+            font-size: 18px !important;
+        }
+        @media (max-width: 1024px) {
+            font-size: 16px !important;
+        }
+        @media (max-width: 640px) {
+            font-size: 12px !important;
+        }
     }
-    @media (max-width: 1024px) {
-        font-size: 16px !important;
-    }
-    @media (max-width: 640px) {
-        font-size: 12px !important;
-    }
-}
 
-h4 {
-    @media (min-width: 1024px) {
-        font-size: 48px !important;
+    h4 {
+        @media (min-width: 1024px) {
+            font-size: 48px !important;
+        }
+        @media (max-width: 1024px) {
+            font-size: 32 px !important;
+        }
+        @media (max-width: 640px) {
+            font-size: 20px !important;
+        }
     }
-    @media (max-width: 1024px) {
-        font-size: 32 px !important;
-    }
-    @media (max-width: 640px) {
-        font-size: 20px !important;
-    }
-}
 
-h5 {
-    @media (min-width: 1024px) {
-        font-size: 32px !important;
-    }
-    @media (max-width: 1024px) {
-        font-size: 24px !important;
-    }
-    @media (max-width: 640px) {
-        font-size: 14px !important;
+    h5 {
+        @media (min-width: 1024px) {
+            font-size: 32px !important;
+        }
+        @media (max-width: 1024px) {
+            font-size: 24px !important;
+        }
+        @media (max-width: 640px) {
+            font-size: 14px !important;
+        }
     }
 }
 
@@ -170,4 +172,37 @@ section {
     @media (max-width: 640px) {
         width: 24px !important;
     }
+}
+
+.svg-container {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+}
+
+@keyframes reveal {
+    to {
+        mask-position: 100% 0;
+    }
+}
+
+/* Apply the animation to the SVG element */
+.svg-container svg path {
+    animation: reveal 2s ease-in forwards;
+}
+
+@keyframes raindrop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hero-arrow-svg-container svg path {
+    animation: raindrop 1s ease-in-out forwards;
+    animation-delay: 1s; /* Delay the animation for a smoother effect */
 }

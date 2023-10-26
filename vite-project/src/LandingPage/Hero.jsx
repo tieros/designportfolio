@@ -21,7 +21,9 @@ const Hero = () => (
             </div>
             <Arrow className='sm:hidden self-center w-20' />
         </div>
-        <Arrow className='hidden lg:block absolute bottom-0 left-[40%] items-end h-[100px] self-end' />
+        <div className='hero-arrow-svg-container'>
+            <Arrow className='hidden lg:block absolute bottom-0 left-[40%] items-end h-[100px] self-end' />
+        </div>
         <img
             src={HeroDesktopImage}
             alt='Image of Elif and Tiera'

@@ -28,3 +28,64 @@ h2 {
 button {
     border-radius: 8px;
 }
+
+.image-container {
+    width: 348px; /* Set the width of your container */
+    height: 588px; /* Set the height of your container */
+    background-image: url('./assets/Mocks.png'); /* Replace with the path to your image */
+    background-size: 915px 587px; /* Set the total width of the image (3 screenshots side by side) */
+    background-position: 0 0; /* Initial position (first screenshot) */
+    transition: background-position 0.3s ease; /* Add a transition for smooth sliding */
+}
+
+.func-desc {
+    width: 360px;
+    font-size: 24px;
+}
+
+/* .video-container {
+    position: relative;
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.frame {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+} */
+
+.color-cont {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 800px) {
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+    }
+}
+
+.flow-container {
+    height: 2000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax-flow {
+    transform: translateY(30%);
+}
