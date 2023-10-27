@@ -245,7 +245,7 @@ const Paybud = () => {
                         className='w-[450px]'
                     />
                 </div>
-                <div className='basis-2/3 pt-[2%] relative'>
+                <div className='basis-2/3 p-[2%] relative'>
                     <h2>| Signup Flow</h2>
                     <img
                         src={UserFlow}
