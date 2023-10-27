@@ -9,33 +9,30 @@ import LogoOutline from './assets/logooutline.png';
 import LogoBlack from './assets/logoblack.png';
 import LogoGrid from './assets/icongrid.png';
 import LogoShapes from './assets/logoshapes.png';
-import SmallAnimation from './assets/AnimationCropped.mp4';
-import Frame from './assets/MockupFrame.png';
 import IconSet from './assets/iconset.png';
 import Persona from './assets/persona.png';
 import UserFlow from './assets/OnboardingFlow.png';
-import BrowserMockup from './assets/browsermockup.png';
+import BrowserIcon from './assets/browsericonpaybud.png';
+import ComponentImg from './assets/components.png';
+import ComponentsShow from './assets/componentshow.png';
+import ThankYou from './assets/thankyou.png';
+import ImageSlider from './ImageSlider';
 const Paybud = () => {
     const [activeMainFunc, setActiveMainFunc] = useState(1);
 
     const [scroll, setScroll] = useState(0);
-    const [flowScroll, setFlowScroll] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
             setScroll(window.scrollY);
             const parallaxMock = document.querySelector('.parallax-mock');
             const moodBoard = document.querySelector('.moodboard');
-            const userFlow = document.querySelector('.parallax-flow');
+
             if (parallaxMock) {
                 parallaxMock.style.transform = `translateY(${scroll * 0.3}px)`;
             }
             if (moodBoard) {
                 moodBoard.style.transform = `translateY(${scroll * -0.1}px)`;
-            }
-            if (userFlow) {
-                userFlow.style.transform = `translateY(${scroll * 0.015}px)`;
-                console.log('yes');
             }
         };
 
@@ -51,7 +48,10 @@ const Paybud = () => {
             <section className={`parallax-container bg-black`}>
                 <div className='flex justify-center h-[100vh] items-center'>
                     <HeroLogo className='w-[30vw]' />
-                    <img src={HeroImg} className='w-[700px] parallax-mock' />
+                    <img
+                        src={HeroImg}
+                        className='w-[230px] sm:w-[500px] lg:w-[700px] parallax-mock'
+                    />
                 </div>
                 <div className={`moodboard p-[5%] flex flex-col gap-[1em]`}>
                     <h2 className='text-bg'>| Moodboard</h2>
@@ -61,14 +61,14 @@ const Paybud = () => {
 
             <section className='bg-[#F2F2F2] p-[5%]'>
                 <h2>| What Does PayBud Do?</h2>
-                <div className='flex gap-4'>
+                <div className='flex gap-4 flex-wrap sm:flex-nowrap'>
                     <div className='flex basis-1/2 gap-4 flex-col items-center mt-[80px]'>
-                        <div className='flex w-[400px] justify-between'>
+                        <div className='flex w-full sm:w-[400px] justify-between'>
                             <button
                                 className={
                                     activeMainFunc == 1
-                                        ? 'activeFunc text-3xl py-4 px-6'
-                                        : `text-3xl py-4 px-6`
+                                        ? 'activeFunc func-button'
+                                        : `func-button`
                                 }
                                 onClick={() => setActiveMainFunc(1)}
                             >
@@ -77,8 +77,8 @@ const Paybud = () => {
                             <button
                                 className={
                                     activeMainFunc == 2
-                                        ? 'activeFunc text-3xl py-4 px-6'
-                                        : `text-3xl py-4 px-6`
+                                        ? 'activeFunc func-button'
+                                        : `func-button`
                                 }
                                 onClick={() => setActiveMainFunc(2)}
                             >
@@ -87,15 +87,15 @@ const Paybud = () => {
                             <button
                                 className={
                                     activeMainFunc == 3
-                                        ? 'activeFunc text-3xl py-4 px-6'
-                                        : `text-3xl py-4 px-6`
+                                        ? 'activeFunc func-button'
+                                        : `func-button`
                                 }
                                 onClick={() => setActiveMainFunc(3)}
                             >
                                 Pay
                             </button>
                         </div>
-                        <div className='bg-[#ffffffe3] rounded-lg p-4 w-[400px]'>
+                        <div className='bg-[#ffffffe3] rounded-lg p-4 w-full sm:w-[400px]'>
                             {activeMainFunc == 1 ? (
                                 <p className='func-desc'>
                                     Easily send money to your buds.
@@ -109,7 +109,7 @@ const Paybud = () => {
                             )}
                         </div>
                     </div>
-                    <div className='basis-1/2 w-[500px] overflow-hidden flex justify-center'>
+                    <div className='basis-1/2 w-[500px] overflow-hidden m-auto flex justify-center'>
                         <div
                             className='image-container'
                             style={{
@@ -132,11 +132,20 @@ const Paybud = () => {
 
             <section className='bg-[#F2F2F2] p-[5%] relative'>
                 <h2>| Logo</h2>
-                <div className='flex gap-12'>
-                    <img src={LogoGrid} className='w-[300px] h-full' />
+                <div className='flex flex-col lg:flex-row gap-12'>
+                    <img
+                        src={LogoGrid}
+                        className='w-[150px] lg:w-[300px] h-full'
+                    />
                     <div className='flex flex-col gap-4'>
-                        <img className='w-[300px]' src={LogoOutline} />
-                        <img className='w-[300px]' src={LogoBlack} />
+                        <img
+                            className='w-[150px] lg:w-[300px]'
+                            src={LogoOutline}
+                        />
+                        <img
+                            className='w-[150px] lg:w-[300px]'
+                            src={LogoBlack}
+                        />
                     </div>
                 </div>
                 <img
@@ -227,23 +236,57 @@ const Paybud = () => {
                 </div>
             </section>
 
-            <section className='bg-[#F2F2F2] relative'>
-                <div>
+            <section className='bg-[#F2F2F2] relative flex gap-10 flex-wrap lg:flex-nowrap'>
+                <div className='p-[2%] basis-1/3'>
                     <h2>| Persona</h2>
                     <img
                         alt='image showing Persona'
                         src={Persona}
-                        className='w-[500px]'
+                        className='w-[450px]'
                     />
                 </div>
-                <div className='flow-container absolute top-0 right-0'>
-                    <h2 className='p-[2%]'>| Signup Flow</h2>
+                <div className='basis-2/3 pt-[2%]'>
+                    <h2>| Signup Flow</h2>
                     <img
                         src={UserFlow}
-                        className='w-[900px] h-[650px] parallax-flow'
+                        className='w-[90vw] h-auto lg:w-[900px] lg:h-[650px]'
                     />
                 </div>
             </section>
+
+            <section className='bg-[#F2F2F2] flex justify-center'>
+                <img
+                    src={BrowserIcon}
+                    alt='browser icon mockup'
+                    className='w-[80vw]'
+                />
+            </section>
+            <section className='bg-[#F2F2F2] wireframe-section'>
+                <h2>| Wireframes</h2>
+            </section>
+
+            <section className='bg-[#F2F2F2] p-[2%]'>
+                <h2 className='py-[2%]'>| Components</h2>
+                <div className='flex flex-wrap lg:flex-nowrap justify-center'>
+                    <div className='flex basis-1/2 flex-col justify-center items-center gap-8'>
+                        <div className='flex components-headers-wrapper'>
+                            <h3>Make so many things with</h3>
+                            <h4>one component</h4>
+                        </div>
+
+                        <img
+                            src={ComponentImg}
+                            alt='components'
+                            className='max-w-[350px]'
+                        />
+                    </div>
+                    <div className='flex basis-1/2'>
+                        <img src={ComponentsShow} alt='components' />
+                    </div>
+                </div>
+            </section>
+            <ImageSlider />
+            <img src={ThankYou} alt='thank you!' />
         </>
     );
 };
