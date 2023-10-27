@@ -1,12 +1,15 @@
 h2 {
     font-size: 48px !important;
     font-family: 'Open Sans';
+    margin-bottom: 40px !important;
 
-    @media (max-width: 640px) {
-        font-size: 24px !important;
-    }
     @media (max-width: 1024px) {
         font-size: 32px !important;
+        margin-bottom: 24px !important;
+    }
+    @media (max-width: 640px) {
+        font-size: 24px !important;
+        margin-bottom: 24px !important;
     }
 }
 
@@ -127,3 +130,13 @@ button {
 .swiper-pagination-bullet-active {
     background: black !important;
 }
+
+/* section {
+    padding: 48px;
+    @media (max-width: 1024px) {
+        padding: 32px;
+    }
+    @media (max-width: 420px) {
+        padding: 24px;
+    }
+} */

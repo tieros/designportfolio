@@ -62,7 +62,7 @@ const Paybud = () => {
             <section className='bg-[#F2F2F2] p-[5%]'>
                 <h2>| What Does PayBud Do?</h2>
                 <div className='flex gap-4 flex-wrap sm:flex-nowrap'>
-                    <div className='flex basis-1/2 gap-4 flex-col items-center mt-[80px]'>
+                    <div className='flex basis-full sm:basis-1/2 gap-4 flex-col items-center mt-[80px]'>
                         <div className='flex w-full sm:w-[400px] justify-between'>
                             <button
                                 className={
@@ -109,7 +109,7 @@ const Paybud = () => {
                             )}
                         </div>
                     </div>
-                    <div className='basis-1/2 w-[500px] overflow-hidden m-auto flex justify-center'>
+                    <div className='basis-full sm:basis-1/2 w-[500px] overflow-hidden m-auto flex justify-center'>
                         <div
                             className='image-container'
                             style={{
@@ -245,22 +245,27 @@ const Paybud = () => {
                         className='w-[450px]'
                     />
                 </div>
-                <div className='basis-2/3 pt-[2%]'>
+                <div className='basis-2/3 pt-[2%] relative'>
                     <h2>| Signup Flow</h2>
                     <img
                         src={UserFlow}
-                        className='w-[90vw] h-auto lg:w-[900px] lg:h-[650px]'
+                        className='w-[90vw] relative h-auto lg:w-[900px] lg:h-[650px] z-10'
+                    />
+                    <img
+                        src={BrowserIcon}
+                        alt='browser icon mockup'
+                        className='w-[80vw] absolute right-[30vw] bottom-0 hidden lg:block'
                     />
                 </div>
             </section>
 
-            <section className='bg-[#F2F2F2] flex justify-center'>
+            <div className='bg-[#F2F2F2] flex justify-center lg:hidden'>
                 <img
                     src={BrowserIcon}
                     alt='browser icon mockup'
                     className='w-[80vw]'
                 />
-            </section>
+            </div>
             <section className='bg-[#F2F2F2] wireframe-section'>
                 <h2>| Wireframes</h2>
             </section>

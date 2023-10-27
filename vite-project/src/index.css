@@ -98,6 +98,10 @@ a {
             font-size: 14px !important;
         }
     }
+    section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 }
 
 .action-text {
@@ -151,11 +155,6 @@ a {
 
 .work-section img {
     z-index: 20;
-}
-
-section {
-    padding-top: 48px;
-    padding-bottom: 48px;
 }
 
 #mystory {
