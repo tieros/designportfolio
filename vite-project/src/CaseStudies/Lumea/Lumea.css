@@ -1,0 +1,117 @@
+.light-tag,
+.dark-tag {
+    border-radius: 8px;
+    padding: 10px 16px;
+    display: flex;
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.light-tag {
+    background: var(--Nude, #ffcdb2);
+}
+
+.dark-tag {
+    background: var(--Primary, #ff9b89);
+}
+
+.hero-header {
+    color: var(--Dark-Text, #230d07);
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 96px */
+    letter-spacing: 1.92px;
+}
+
+.hero-img {
+    rotate: 328deg;
+    position: absolute;
+    right: -58px;
+    top: -763px;
+    width: 732px;
+    height: 1796px;
+}
+
+.hero-cont {
+    padding: 10%;
+    position: relative;
+    overflow: hidden;
+
+    p {
+        color: var(--Dark-Text, #230d07);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.6px;
+    }
+}
+
+.hero-cont::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: -50%;
+    right: -70%;
+    z-index: -1;
+    background: url('./assets//LumeaHero.png') no-repeat;
+    background-size: 732px 1796px;
+    transform: rotate(328deg);
+
+    @media (max-width: 1024px) {
+        top: -30%;
+        right: -120%;
+        background-size: 500px 1200px;
+    }
+
+    @media (max-width: 420px) {
+        top: -20%;
+        right: -270%;
+        background-size: 300px 700px;
+    }
+}
+
+.hero-sub-header {
+    color: var(--Dark-Text, #230d07);
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.sticker {
+    width: 200px;
+    height: 180px;
+    border-radius: 3px;
+    padding: 10px 16px;
+    background: var(--Nude, #ffcdb2);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+        1px 4px 8px 0px rgba(0, 0, 0, 0.1),
+        2px 14px 14px 0px rgba(0, 0, 0, 0.09),
+        5px 32px 19px 0px rgba(0, 0, 0, 0.05),
+        9px 56px 23px 0px rgba(0, 0, 0, 0.01),
+        15px 88px 25px 0px rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Dark-Text, #230d07);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.72px;
+    z-index: 100;
+}
+
+.sticker-hero-1 {
+    transform: rotate(6.721deg);
+}
+.sticker-hero-2 {
+    transform: rotate(-1.712deg);
+    margin-left: 40px;
+}
