@@ -18,6 +18,10 @@ import ComponentsShow from './assets/componentshow.png';
 import ThankYou from './assets/thankyou.png';
 import ImageSlider from './ImageSlider';
 const Paybud = () => {
+    useEffect(() => {
+        // Scroll to the top of the page when it loads
+        window.scrollTo(0, 0);
+    }, []);
     const [activeMainFunc, setActiveMainFunc] = useState(1);
 
     const [scroll, setScroll] = useState(0);

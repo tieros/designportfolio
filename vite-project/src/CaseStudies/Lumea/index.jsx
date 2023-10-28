@@ -15,7 +15,13 @@ import Solution1 from './assets/sol1.png';
 import Solution2 from './assets/sol2.png';
 import LumeaScreens from './assets/lumeascreens.png';
 import Findings from './assets/findings.png';
+import { useEffect } from 'react';
 const LumeaCaseStudy = () => {
+    useEffect(() => {
+        // Scroll to the top of the page when it loads
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='lumea-container'>
             <div className='hero-cont flex flex-col gap-[8vw]'>
@@ -339,6 +345,41 @@ const LumeaCaseStudy = () => {
                     </div>
                 </div>
                 <img src={Findings} alt='image showing findings of research' />
+            </section>
+            <section className='flex flex-col gap-8'>
+                <div className='flex flex-col findings-list-wrapper gap-2'>
+                    <h4>Task Efficiency:</h4>
+                    <ul className='flex flex-col gap-2'>
+                        <li>
+                            On average, participants, regardless of gender,
+                            completed the sign-up task 62% faster with the new
+                            design compared to the old version.
+                        </li>
+                        <li>
+                            The new design also yielded a significant
+                            improvement in treatment-saving efficiency, with an
+                            average completion time 67% faster.
+                        </li>
+                    </ul>
+                </div>
+                <div className='flex flex-col findings-list-wrapper gap-2'>
+                    <h4>User Experience Across Gender:</h4>
+                    <ul className='flex flex-col gap-2'>
+                        <li>
+                            Participants of different genders reported similar
+                            experiences of improved user satisfaction with the
+                            intuitive nature of the redesigned interface.
+                        </li>
+                        <li>
+                            Emotional responses were notably positive, with
+                            participants expressing reduced frustration across
+                            the board.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section className='flex my-[4%] text-end justify-end'>
+                <h2>thank you for your time!</h2>
             </section>
         </div>
     );

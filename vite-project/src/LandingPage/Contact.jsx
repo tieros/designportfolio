@@ -34,26 +34,43 @@ const Contact = () => (
             </h5>
             <div className='flex gap-8'>
                 <IconContainer bgColor={'bg-reddish'}>
-                    <a href='mailto:sutanyeri@gmail.com'>
+                    <a
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        href='mailto:sutanyeri@gmail.com'
+                    >
                         <Mail />
                     </a>
                 </IconContainer>
                 <IconContainer bgColor={'bg-[#3BB3BD]'}>
-                    <a href='https://www.linkedin.com/in/elifsutanyeri/'>
+                    <a
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        href='https://www.linkedin.com/in/elifsutanyeri/'
+                    >
                         <LinkedIn />
                     </a>
                 </IconContainer>
                 <IconContainer bgColor={'bg-yellow'}>
-                    <a href='https://www.behance.net/elifsudesign'>
+                    <a
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        href='https://www.behance.net/elifsudesign'
+                    >
                         <Behance />
                     </a>
                 </IconContainer>
                 <IconContainer bgColor={'bg-pink'}>
-                    <a href='https://www.behance.net/elifsudesign'>
+                    <a
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        href='https://www.dribble.com/elifsudesign'
+                    >
                         <Dribble />
                     </a>
                 </IconContainer>
             </div>
+            <p>sutanyeri@gmail.com</p>
         </div>
     </section>
 );

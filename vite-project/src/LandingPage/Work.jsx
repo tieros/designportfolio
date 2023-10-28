@@ -144,7 +144,10 @@ const Work = () => {
                                 wireframes and prototypes.
                             </p>
                         </div>
-                        <Button className='!py-2 sm:!py-4 self-center'>
+                        <Button
+                            className='!py-2 sm:!py-4 self-center'
+                            onClick={() => navigate('/work/paybud')}
+                        >
                             Enter PayBud World
                         </Button>
                     </div>
@@ -177,7 +180,10 @@ const Work = () => {
                                 ensuring a clean and user-friendly experience.
                             </p>
                         </div>
-                        <Button className='!py-2 sm:!py-4 self-center'>
+                        <Button
+                            className='!py-2 sm:!py-4 self-center'
+                            onClick={() => navigate('/work/lumea')}
+                        >
                             Enter Lumea World
                         </Button>
                     </div>
@@ -256,7 +262,13 @@ const Work = () => {
                     </svg>
                 </div>
                 <Button className={'h-[62px] bg-reddish'}>
-                    Check Other Design Work
+                    <a
+                        href='https://www.behance.net/elifsudesign'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Check Other Design Work
+                    </a>
                 </Button>
             </div>
         </section>
