@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: #fbfaf6;
+    background-color: #fbfaf6 !important;
     padding: 0;
     scroll-behavior: smooth;
 }
