@@ -11,9 +11,8 @@ import { useNavigate } from 'react-router-dom';
 const Work = () => {
     const navigate = useNavigate();
     const arrowRef = useRef();
-    const shineRef = useRef();
+
     const [isInViewport, setIsInViewport] = useState(false);
-    const [shineLineViewed, setShineLineViewed] = useState(false);
 
     useEffect(() => {
         const options = {
@@ -26,7 +25,6 @@ const Work = () => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     setIsInViewport(true);
-                    setShineLineViewed(true);
                     observer.disconnect(); // Stop observing once it's in the viewport
                 }
             });
@@ -34,10 +32,6 @@ const Work = () => {
 
         if (arrowRef.current) {
             observer.observe(arrowRef.current);
-        }
-        if (shineRef.current) {
-            console.log('jgj');
-            observer.observe(shineRef.current);
         }
 
         return () => {
@@ -47,8 +41,6 @@ const Work = () => {
         };
     }, []);
 
-    console.log(shineLineViewed);
-
     return (
         <section
             id='work'
@@ -56,61 +48,7 @@ const Work = () => {
         >
             <div className='inline-flex items-end h-[97px] sm:h-[110px] lg:h-[150px]'>
                 <div className='self-start w-10 sm:w-14 lg:w-16'>
-                    <svg
-                        width='74'
-                        height='78'
-                        viewBox='0 0 74 78'
-                        fill='black'
-                        xmlns='http://www.w3.org/2000/svg'
-                        ref={shineRef}
-                    >
-                        <mask
-                            id='shine-mask'
-                            maskUnits='userSpaceOnUse'
-                            x='0'
-                            y='0'
-                            width='74'
-                            height='78'
-                        >
-                            <rect width='100%' height='100%' fill='black' />
-                            <path
-                                d='M36.9303 70.7715C34.3567 72.0752 31.8223 73.3875 29.212 74.6155C28.6514 74.8817 27.9866 74.6434 27.7238 74.0857C27.4576 73.5251 27.6986 72.8567 28.2564 72.5939C30.8512 71.3707 33.3646 70.0702 35.9199 68.7748C36.4729 68.4967 37.1457 68.7181 37.4232 69.2648C37.7013 69.8178 37.4832 70.4933 36.9303 70.7715Z'
-                                fill='url(#shine-gradient)'
-                            />
-                            <path
-                                d='M38.2161 46.9472C29.3772 44.7164 20.6566 42.0404 11.8711 39.6226C11.2743 39.4566 10.9258 38.8411 11.089 38.2477C11.2549 37.6509 11.8669 37.2998 12.4666 37.4622C21.236 39.8786 29.9404 42.5532 38.7626 44.7762C39.3644 44.9289 39.7248 45.5367 39.5749 46.135C39.4222 46.7368 38.8144 47.0971 38.2161 46.9472Z'
-                                fill='url(#shine-gradient)'
-                            />
-                            <path
-                                d='M57.165 20.0938C52.0161 14.3597 47.0198 8.47261 41.8071 2.79619C41.3928 2.34039 41.423 1.63392 41.8753 1.21684C42.3305 0.796273 43.0404 0.829297 43.4575 1.28162C48.6744 6.96715 53.6777 12.8599 58.8307 18.6031C59.2421 19.0624 59.2057 19.7696 58.7464 20.1811C58.2843 20.596 57.5799 20.5559 57.165 20.0938Z'
-                                fill='url(#shine-gradient)'
-                            />
-                        </mask>
-                        <rect
-                            width='100%'
-                            height='100%'
-                            mask='url(#shine-mask)'
-                            fill='black'
-                        />
-                        <linearGradient
-                            id='shine-gradient'
-                            x1='0%'
-                            y1='0%'
-                            x2='100%'
-                            y2='0%'
-                        >
-                            <stop offset='0' stopColor='rgba(0, 0, 0, 0)' />
-                            <stop offset='1' stopColor='rgb(109, 109, 109)'>
-                                <animate
-                                    attributeName='offset'
-                                    from='1'
-                                    to='0.2'
-                                    dur='1s'
-                                    repeatCount='indefinite'
-                                />
-                            </stop>
-                        </linearGradient>
-                    </svg>
+                    <ShineLine />
                 </div>
                 <h1>Work</h1>
             </div>
