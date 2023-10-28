@@ -7,6 +7,10 @@ body {
     background-color: #fbfaf6;
     padding: 0;
     scroll-behavior: smooth;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #fbfaf6;
+    }
 }
 
 h3,
