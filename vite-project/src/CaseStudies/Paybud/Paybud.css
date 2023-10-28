@@ -1,15 +1,21 @@
-h2 {
-    font-size: 48px !important;
-    font-family: 'Open Sans';
-    margin-bottom: 40px !important;
+.paybud-container {
+    h2 {
+        font-size: 48px !important;
+        font-family: 'Open Sans';
+        margin-bottom: 40px !important;
 
-    @media (max-width: 1024px) {
-        font-size: 32px !important;
-        margin-bottom: 24px !important;
+        @media (max-width: 1024px) {
+            font-size: 32px !important;
+            margin-bottom: 24px !important;
+        }
+        @media (max-width: 640px) {
+            font-size: 24px !important;
+            margin-bottom: 24px !important;
+        }
     }
-    @media (max-width: 640px) {
-        font-size: 24px !important;
-        margin-bottom: 24px !important;
+
+    button {
+        border-radius: 8px;
     }
 }
 
@@ -26,10 +32,6 @@ h2 {
 
 .parallax-mock {
     transform: translateY(30%);
-}
-
-button {
-    border-radius: 8px;
 }
 
 .image-container {

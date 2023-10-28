@@ -3,20 +3,24 @@ import './Lumea.css';
 import PhilipsLogo from './assets/PhilipsLogo.png';
 const LumeaCaseStudy = () => {
     return (
-        <>
-            <div className='hero-cont flex flex-col gap-28'>
-                <div className='max-w-[388px]'>
-                    <img src={PhilipsLogo} alt='philips logo' />
-                    <h2 className='hero-header'>Lumea App</h2>
+        <div className='lumea-container'>
+            <div className='hero-cont flex flex-col gap-[8vw]'>
+                <div className='max-w-max'>
+                    <img
+                        src={PhilipsLogo}
+                        alt='philips logo'
+                        className='max-w-[300px]'
+                    />
+                    <h2>Lumea App</h2>
                     <div className='flex flex-col gap-4 max-w-[230px]'>
                         <div className='light-tag'>Redesign</div>
                         <div className='dark-tag'>UI/UX Case Study</div>
                     </div>
                 </div>
 
-                <div className='max-w-[1095px] flex gap-10 flex-wrap'>
+                <div className='max-w-[1095px] flex gap-10 flex-wrap lg:flex-nowrap'>
                     <div className='flex lg:basis-2/3'>
-                        <div className='gap-8 flex flex-col'>
+                        <div className='gap-4 flex flex-col'>
                             <h5 className='hero-sub-header'>
                                 Why need redesign?
                             </h5>
@@ -39,17 +43,17 @@ const LumeaCaseStudy = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex lg:basis-1/3 content-between flex-wrap'>
-                        <div className='sticker sticker-hero-1'>
+                    <div className='flex lg:basis-1/3 content-between flex-wrap justify-center lg:justify-start'>
+                        <div className='lumea-sticker lumea-sticker-hero-1'>
                             Make the app gender inclusive
                         </div>
-                        <div className='sticker sticker-hero-2'>
+                        <div className='lumea-sticker lumea-sticker-hero-2'>
                             Solve usability problems
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

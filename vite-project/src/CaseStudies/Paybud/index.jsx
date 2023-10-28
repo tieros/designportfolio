@@ -44,7 +44,7 @@ const Paybud = () => {
     }, [scroll]);
 
     return (
-        <>
+        <div className='paybud-container'>
             <section className={`parallax-container bg-black`}>
                 <div className='flex justify-center h-[100vh] items-center'>
                     <HeroLogo className='w-[30vw]' />
@@ -292,7 +292,7 @@ const Paybud = () => {
             </section>
             <ImageSlider />
             <img src={ThankYou} alt='thank you!' />
-        </>
+        </div>
     );
 };
 
