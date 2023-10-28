@@ -1,7 +1,7 @@
 import './Lumea.css';
 import DesignThinkingDiamond from './assets/designthinkingdiamond.png';
 import PersonaJourneyMap from './assets/personajourneymap.png';
-import PhilipsLogo from './assets/PhilipsLogo.png';
+import PhilipsLogo from './assets/Philipslogo.png';
 import KeyTakeAways from './assets/keytakeaways.png';
 import GenderProblems from './assets/genderproblems.png';
 import LumeaMan from './assets/lumeaman.png';
