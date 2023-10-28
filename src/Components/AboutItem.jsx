@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const AboutItem = ({ text, imageSrc, bgColor }) => (
-    <div className='aboutItemAnimate origin-left cursor-pointer flex items-center  hover:scale-150 hover:bg-opacity-80 hover:backdrop-blur-md'>
+    <div className='lg:aboutItemAnimate origin-left cursor-pointer flex items-center  hover:scale-150 hover:bg-opacity-80 hover:backdrop-blur-md'>
         <div className='shadow-tag flex items-center justify-center rounded-full bg-white border-black border-2'>
             {imageSrc ? (
                 <div
