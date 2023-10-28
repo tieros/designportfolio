@@ -9,7 +9,7 @@ import Nerd from '../assets/nerd.png';
 import Paint from '../assets/paint.png';
 import Idea from '../assets/idea.png';
 import ReactIcon from '../assets/ReactIcon.png';
-import Design from '../assets/design.png';
+import Design from '../assets/Design.png';
 const MyStory = () => (
     <section id='mystory' className='flex flex-col items-center'>
         <h1 className='text-center mb-16'>My Story</h1>
