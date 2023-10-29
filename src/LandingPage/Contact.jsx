@@ -5,6 +5,7 @@ import LinkedIn from '../assets/linkedin.svg?react';
 import Mail from '../assets/mail.svg?react';
 import Behance from '../assets/behance.svg?react';
 import Dribble from '../assets/dribble.svg?react';
+import Doggie from '../assets/doggie.svg?react';
 
 const Contact = () => (
     <section
@@ -70,7 +71,10 @@ const Contact = () => (
                     </a>
                 </IconContainer>
             </div>
-            <p>sutanyeri@gmail.com</p>
+            <h2 className='font-Lalezar lg:text-3xl text-lg'>
+                sutanyeri@gmail.com
+            </h2>
+            <Doggie className='doggie-svg' />
         </div>
     </section>
 );

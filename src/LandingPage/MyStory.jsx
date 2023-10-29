@@ -13,7 +13,7 @@ import Design from '../assets/Design.png';
 const MyStory = () => (
     <section id='mystory' className='flex flex-col items-center'>
         <h1 className='text-center mb-16'>My Story</h1>
-        <div className='flex flex-col gap-5 relative'>
+        <div className='flex flex-col gap-5'>
             <AboutItem
                 text={
                     <div className='inline-flex items-center gap-2'>

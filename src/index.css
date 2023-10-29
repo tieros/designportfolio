@@ -211,3 +211,39 @@ a {
     animation: raindrop 1s ease-in-out forwards;
     animation-delay: 1s; /* Delay the animation for a smoother effect */
 }
+
+@keyframes arm1Animation {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+/* Apply the animation to 'arm1' with a 0.1s delay */
+#arm1 {
+    animation: arm1Animation 500ms infinite 0.1s;
+}
+
+/* Define keyframes for arm2 animation */
+@keyframes arm2Animation {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+/* Apply the animation to 'arm2' with a 0.2s delay */
+#arm2 {
+    animation: arm2Animation 500ms infinite 0.2s;
+}
+
+.doggie-svg {
+    width: 260px;
+    height: 218px;
+}
