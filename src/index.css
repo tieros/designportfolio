@@ -244,6 +244,146 @@ a {
 }
 
 .doggie-svg {
-    width: 260px;
-    height: 218px;
+    width: 200px;
+    height: 150px;
+    z-index: 20;
+
+    @media (max-width: 640px) {
+        width: 120px;
+    }
+}
+
+.contact-doggie-wrapper {
+    background: url('./assets/redbg.png');
+    background-size: 370px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 400px;
+
+    @media (max-width: 1024px) {
+        background-size: 295px;
+        width: 100%;
+    }
+
+    @media (max-width: 640px) {
+        background-size: 270px;
+        width: 100%;
+    }
+}
+
+.email-wrapper {
+    z-index: 20;
+    display: inline-flex;
+    transform: rotate(-2.507deg);
+    padding: 25px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid #000;
+    background: #b5f5d1;
+    box-shadow: 3px 4px 0px 0px #000;
+    color: #000;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 101.7%; /* 32.544px */
+
+    @media (max-width: 640px) {
+        font-size: 18px;
+    }
+}
+
+.text-flow-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+.text-flow {
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: leftright 20s linear infinite both;
+}
+
+.text-flow:nth-child(2) {
+    opacity: 0;
+    animation: leftright2 20s linear infinite;
+    animation-delay: 20s;
+}
+
+@keyframes leftright {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes leftright2 {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+.m-scroll {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    overflow: hidden;
+    border: 3px solid black;
+    box-shadow: 2px 3px 0px 0px #000;
+
+    .m-scroll__title {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        white-space: nowrap;
+        transform: scale(2);
+        transition: all 1s ease;
+
+        @media (max-width: 640px) {
+            transform: scale(1.3);
+        }
+        div {
+            display: flex;
+            animation: scrollText 33s infinite linear;
+        }
+        h6 {
+            margin: 0;
+            font-size: 14px;
+            transition: all 2s ease;
+        }
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
