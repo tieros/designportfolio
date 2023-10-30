@@ -47,4 +47,15 @@
             }
         }
     }
+    .branding-wrapper {
+        background: url('./assets/sparkypattern.png');
+        background-position: top;
+
+        p {
+            border-radius: 8px;
+            background: rgba(236, 236, 236, 0.17);
+
+            backdrop-filter: blur(5px);
+        }
+    }
 }
