@@ -163,8 +163,8 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-            <div className='max-w-[619px] pt-10 flex h-[167px] gap-2'>
-                <div className=' svg-container'>
+            <div className='max-w-[619px] pt-10 flex h-[167px] gap-2 relative'>
+                <div className=' svg-container absolute left-[-30%] bottom-[-10%]'>
                     <svg
                         width='120'
                         height='130'
