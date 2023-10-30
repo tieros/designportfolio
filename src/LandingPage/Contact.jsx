@@ -12,7 +12,7 @@ const Contact = () => (
     >
         <h1 className='pb-10'>Contact</h1>
         <div className='flex relative w-full flex-col-reverse lg:flex-row items-center gap-8 lg:gap-0'>
-            <div className='basis-1/2 w-[292px] sm:w-[487px] flex flex-col items-center justify-center text-center rounded-full gap-8 z-20 md:px-[5%]'>
+            <div className='basis-1/2 w-[292px] sm:w-[487px] flex flex-col items-center justify-center text-center rounded-full gap-8 md:px-[5%]'>
                 <h5 className=' bg-bg p-4 sm:p-7 lg:p-12'>
                     Some platforms you can reach out to me, check on my work,
                     and say me hi!
