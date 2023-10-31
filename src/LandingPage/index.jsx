@@ -18,7 +18,7 @@ const LandingPage = () => (
                 <a href='#contact'>Contact</a>
             </nav>
         </header>
-        <div className='flex flex-col lg:gap-28'>
+        <div className='flex flex-col lg:gap-10'>
             <Hero />
             <Work id='work' />
             <MyStory id='mystory' />

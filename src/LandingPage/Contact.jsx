@@ -15,7 +15,7 @@ const Contact = () => (
             <div className='basis-1/2 w-[292px] sm:w-[487px] flex flex-col items-center justify-center text-center rounded-full gap-8 md:px-[5%]'>
                 <h5 className=' bg-bg p-4 sm:p-7 lg:p-12'>
                     Some platforms you can reach out to me, check on my work,
-                    and say me hi!
+                    and say hi!
                 </h5>
                 <div className='flex gap-8'>
                     <IconContainer bgColor={'bg-reddish'}>

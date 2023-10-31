@@ -5,55 +5,53 @@ import Lumea from '../assets/Lumea.png';
 import Sparky from '../assets/Sparky.png';
 import ShineLine from '../assets/shineline.svg?react';
 
-import { useRef, useState, useEffect } from 'react';
-
 import { useNavigate } from 'react-router-dom';
 const Work = () => {
     const navigate = useNavigate();
-    const arrowRef = useRef();
+    // const arrowRef = useRef();
 
-    const [isInViewport, setIsInViewport] = useState(false);
+    // const [isInViewport, setIsInViewport] = useState(false);
 
-    useEffect(() => {
-        const options = {
-            root: null, // Use the viewport as the root
-            rootMargin: '0px',
-            threshold: 0.5, // Trigger when 50% of the element is in the viewport
-        };
+    // useEffect(() => {
+    //     const options = {
+    //         root: null, // Use the viewport as the root
+    //         rootMargin: '0px',
+    //         threshold: 0.5, // Trigger when 50% of the element is in the viewport
+    //     };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setIsInViewport(true);
-                    observer.disconnect(); // Stop observing once it's in the viewport
-                }
-            });
-        }, options);
+    //     const observer = new IntersectionObserver((entries) => {
+    //         entries.forEach((entry) => {
+    //             if (entry.isIntersecting) {
+    //                 setIsInViewport(true);
+    //                 observer.disconnect(); // Stop observing once it's in the viewport
+    //             }
+    //         });
+    //     }, options);
 
-        if (arrowRef.current) {
-            observer.observe(arrowRef.current);
-        }
+    //     if (arrowRef.current) {
+    //         observer.observe(arrowRef.current);
+    //     }
 
-        return () => {
-            if (observer) {
-                observer.disconnect(); // Clean up the observer on unmount
-            }
-        };
-    }, []);
+    //     return () => {
+    //         if (observer) {
+    //             observer.disconnect(); // Clean up the observer on unmount
+    //         }
+    //     };
+    // }, []);
 
     return (
         <section
             id='work'
-            className='flex flex-col items-center work-section lg:gap-16'
+            className='flex flex-col items-center work-section gap-8 lg:gap-16'
         >
-            <div className='inline-flex items-end h-[97px] sm:h-[110px] lg:h-[150px]'>
+            <div className='inline-flex items-end h-[97px] sm:h-[110px] lg:h-[150px] gap-3'>
                 <div className='self-start w-10 sm:w-14 lg:w-16'>
                     <ShineLine />
                 </div>
                 <h1>Work</h1>
             </div>
-            <div className='flex flex-col gap-20 lg:gap-32'>
-                <div className='flex justify-center lg:gap-8'>
+            <div className='flex flex-col gap-12 lg:gap-32'>
+                <div className='flex justify-center lg:gap-6'>
                     <div className='hidden lg:flex basis-2/4 bg-[#f7f7ef] rounded-lg relative'>
                         <img
                             src={Paybud}
@@ -61,7 +59,7 @@ const Work = () => {
                             alt='paybud screenshot'
                         />
                     </div>
-                    <div className='bg-[#f7f7ef] lg:bg-bg rounded-lg p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
+                    <div className='bg-[#f7f7ef]  border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
                         <div className='flex gap-3'>
                             <Tag bgColor='bg-yellow'>Case Study</Tag>
                             <Tag bgColor='bg-green'>Branding</Tag>
@@ -98,7 +96,7 @@ const Work = () => {
                             alt='paybud screenshot'
                         />
                     </div>
-                    <div className='bg-[#f7f7ef] lg:bg-bg rounded-lg p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
+                    <div className='bg-[#f7f7ef] border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
                         <div className='flex gap-3'>
                             <Tag bgColor='bg-yellow'>Case Study</Tag>
                             <Tag bgColor='bg-pink'>Redesign</Tag>
@@ -134,10 +132,10 @@ const Work = () => {
                             alt='paybud screenshot'
                         />
                     </div>
-                    <div className='bg-[#f7f7ef] lg:bg-bg rounded-lg  p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
+                    <div className='bg-[#f7f7ef]  border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg  p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
                         <div className='flex gap-3'>
                             <Tag bgColor='bg-yellow'>Case Study</Tag>
-                            <Tag bgColor='bg-pink'>Redesign</Tag>
+                            <Tag bgColor='bg-green'>Branding</Tag>
                         </div>
                         <div className='flex flex-col gap-5'>
                             <img
@@ -163,7 +161,8 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-            <div className='max-w-[619px] pt-10 flex h-[167px] gap-2 relative'>
+            {/* <div className='max-w-[619px] pt-10 flex h-[167px] gap-2 relative'>
+                <h5>Check other design work</h5>
                 <div className=' svg-container absolute left-[-30%] bottom-[-10%]'>
                     <svg
                         width='120'
@@ -205,10 +204,10 @@ const Work = () => {
                         target='_blank'
                         rel='noopener noreferrer'
                     >
-                        Check Other Design Work
+                        Take Me
                     </a>
                 </Button>
-            </div>
+            </div> */}
         </section>
     );
 };

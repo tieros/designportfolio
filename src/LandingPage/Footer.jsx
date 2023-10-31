@@ -26,14 +26,21 @@ const Footer = () => (
             </div>
         </div>
         <div
-            className='relative flex flex-wrap sm:flex-nowrap footer-bg 
+            className='relative flex flex-wrap gap-4 sm:gap-0 sm:flex-nowrap footer-bg 
     w-full sm:w-[765px] sm:h-[376px] lg:w-[1152px] lg:h-[458px] 2xl:w-[1252px] 2xl:-h[458px]
     justify-around py-[5%]'
         >
             <div className='flex flex-col justify-center sm:justify-start items-start p-4 gap-3 lg:gap-12 lg:p-9'>
-                <div className='flex flex-col gap-3 lg:gap-8 font-Poppins font-medium text-xl sm:text-2xl lg:text-4xl'>
+                <div className='flex flex-col gap-3 lg:gap-8 font-Poppins font-medium text-xl sm:text-xl lg:text-4xl'>
                     <a href='#work'>Work</a>
                     <a href='#mystory'>My Story</a>
+                    <a
+                        href='/Milestones.pdf'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Freelancing
+                    </a>
                 </div>
                 <div className='flex gap-3 lg:gap-8'>
                     <a href='https://www.instagram.com/elifsdesignspace/'>

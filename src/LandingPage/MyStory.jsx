@@ -10,10 +10,19 @@ import Paint from '../assets/paint.png';
 import Idea from '../assets/idea.png';
 import ReactIcon from '../assets/ReactIcon.png';
 import Design from '../assets/Design.png';
+import CVSvg from '../assets/CVSvg.svg?react';
 const MyStory = () => (
-    <section id='mystory' className='flex flex-col items-center'>
+    <section id='mystory' className='flex flex-col items-center relative'>
         <h1 className='text-center mb-16'>My Story</h1>
-        <div className='flex flex-col gap-5'>
+        <a
+            href='/CV.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='absolute top-[5%] right-0 lg:right-[8%]'
+        >
+            <CVSvg className='w-[100px] md:w-[150px]' />
+        </a>
+        <div className='flex flex-col gap-5 relative'>
             <AboutItem
                 text={
                     <div className='inline-flex items-center gap-2'>
