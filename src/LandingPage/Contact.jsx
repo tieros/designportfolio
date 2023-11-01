@@ -22,7 +22,7 @@ const Contact = () => (
                         <a
                             target='_blank'
                             rel='noopener noreferrer'
-                            href='mailto:sutanyeri@gmail.com'
+                            href='mailto:elifsudesigns@gmail.com'
                         >
                             <Mail />
                         </a>
@@ -58,7 +58,7 @@ const Contact = () => (
             </div>
             <div className='basis-1/2 flex flex-col justify-end contact-doggie-wrapper'>
                 <Doggie className='doggie-svg' />
-                <div className='email-wrapper'>sutanyeri@gmail.com</div>
+                <div className='email-wrapper'>elifsudesigns@gmail.com</div>
             </div>
         </div>
     </section>
