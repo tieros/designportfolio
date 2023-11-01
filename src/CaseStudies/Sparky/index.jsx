@@ -13,7 +13,13 @@ import TypoImg2 from './assets/typoimg2.png';
 import DashComponents from './assets/dashcomponents.png';
 import CookiesModal from './assets/cookiesmodal.png';
 import ThankYou from './assets/thankyousparky.png';
+import { useEffect } from 'react';
+
 const Sparky = () => {
+    useEffect(() => {
+        // Scroll to the top of the page when it loads
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className='sparky-container'>
             <div className='hero flex flex-col items-center m-auto'>
