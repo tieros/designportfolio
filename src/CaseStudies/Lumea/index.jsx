@@ -116,7 +116,7 @@ const LumeaCaseStudy = () => {
                 </h3>
                 <img src={KeyTakeAways} alt='key take aways image' />
                 <div className='gender-section py-[5%]'>
-                    <h3 className='lg:!mb-0'>The Gender Problem</h3>
+                    <h3 className='lg:!mb-0'>The Gender Issue</h3>
                     <div className='flex items-center flex-col lg:flex-row'>
                         <p className='basis-1/2'>
                             Philips Lumea offers various models, including one
