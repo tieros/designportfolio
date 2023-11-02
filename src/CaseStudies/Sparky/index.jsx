@@ -4,7 +4,7 @@ import HeroShowcase from './assets/heroshowcase.png';
 import TitleDecor from './assets/titledecor.svg?react';
 import BrandingLogo from './assets/sparkylogobranding.png';
 import BrandingBrowserMock from './assets/brandingbrowsermock.png';
-import Illustrations from './assets/illustrations.png';
+import Illustrations from './assets/Illustrations.png';
 import ButtonComponents from './assets/buttoncomponents.png';
 import './Sparky.css';
 import ChallengeCard from './ChallengeCard';

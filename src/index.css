@@ -400,3 +400,15 @@ a {
     backdrop-filter: blur(1);
     transition: transform 0.3s ease;
 } */
+
+.animate-cv-svg .cv-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 2s linear backwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
