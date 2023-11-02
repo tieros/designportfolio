@@ -89,7 +89,7 @@
         right: -58px;
         top: -763px;
         width: 732px;
-        height: 1796px;
+        height: 1985px;
     }
 
     .hero-cont {
@@ -123,19 +123,19 @@
         right: -70%;
         z-index: -1;
         background: url('./assets//LumeaHero.jpg') no-repeat;
-        background-size: 732px 1796px;
+        background-size: 732px 1985px;
         transform: rotate(328deg);
 
         @media (max-width: 1024px) {
             top: -30%;
             right: -110%;
-            background-size: 500px 1200px;
+            background-size: 500px 1350px;
         }
 
         @media (max-width: 420px) {
             top: -30%;
             right: -180%;
-            background-size: 300px 700px;
+            background-size: 300px 810px;
         }
     }
 

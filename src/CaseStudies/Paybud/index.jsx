@@ -241,15 +241,15 @@ const Paybud = () => {
             </section>
 
             <section className='bg-[#F2F2F2] relative flex gap-10 flex-wrap lg:flex-nowrap'>
-                <div className='p-[2%] basis-1/3'>
+                <div className='p-[2%] basis-full lg:basis-1/3'>
                     <h2>| Persona</h2>
                     <img
                         alt='image showing Persona'
                         src={Persona}
-                        className='w-[450px]'
+                        className='w-full lg:w-[450px]'
                     />
                 </div>
-                <div className='basis-2/3 p-[2%] relative'>
+                <div className='basis-full lg:basis-2/3 p-[2%] relative'>
                     <h2>| Signup Flow</h2>
                     <img
                         src={UserFlow}
