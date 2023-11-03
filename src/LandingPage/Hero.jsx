@@ -9,7 +9,7 @@ const Hero = () => (
                 alt='Image of Elif and Tiera'
                 className='sm:hidden m-auto w-full'
             />
-            <h1 className='font-Lalezar text-center sm:text-left'>
+            <h1 className='font-Lalezar text-center sm:text-left lg:mb-5'>
                 I love ui/ux design
             </h1>
             <div className='font-Poppins max-w-[600px] flex flex-col gap-4 px-3 sm:px-0'>
