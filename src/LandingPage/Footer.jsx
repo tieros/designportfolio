@@ -31,7 +31,7 @@ const Footer = () => (
     justify-around py-[5%]'
         >
             <div className='flex flex-col justify-center sm:justify-start items-start p-4 gap-3 lg:gap-12 lg:p-9'>
-                <div className='flex flex-col gap-3 lg:gap-8 font-Poppins font-medium text-xl sm:text-xl lg:text-4xl'>
+                <div className='flex flex-col gap-3 lg:gap-8 font-Poppins font-medium text-lg sm:text-xl lg:text-4xl'>
                     <a href='#work'>Work</a>
                     <a href='#mystory'>My Story</a>
                     <a
@@ -58,7 +58,7 @@ const Footer = () => (
             <img
                 src={Picture}
                 alt='picture of me and my dog Tiera'
-                className='self-end w-[153px] h-[198px]
+                className='self-end w-[120px] h-[158px]
             sm:w-[338px] sm:h-[409px]
             lg:w-[517px] lg:h-[635px] sm:ml-auto'
             />

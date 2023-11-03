@@ -17,7 +17,7 @@ const Contact = () => (
                     Some platforms you can reach out to me, check on my work,
                     and say hi!
                 </h5>
-                <div className='flex gap-8'>
+                <div className='flex gap-4 sm:gap-8'>
                     <IconContainer bgColor={'bg-reddish'}>
                         <a
                             target='_blank'

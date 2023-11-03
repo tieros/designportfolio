@@ -19,7 +19,7 @@ const MyStory = () => {
                 href='/CV.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='absolute top-[5%] right-0 lg:right-[8%]'
+                className='absolute top-[2%] lg:top-[5%] right-0 lg:right-[8%]'
             >
                 <AnimatedCvSVG />
             </a>
