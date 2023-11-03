@@ -48,9 +48,6 @@ a {
     @media (max-width: 640px) {
         padding: 0 12px;
     }
-    button {
-        max-width: 300px;
-    }
 }
 /* HEADINGS FOR LANDING PAGE */
 
@@ -139,13 +136,13 @@ a {
 }
 
 .footer-bg {
-    background-image: url('./assets/footershapeimage.png');
+    background-image: url('./assets/footershapeimage.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     margin: auto;
 
     @media (max-width: 640px) {
-        background-image: url('./assets/mobilefooter.png');
+        background-image: url('./assets/mobilefooter.jpg');
         background-size: 100%;
     }
 }
@@ -408,6 +405,23 @@ a {
 }
 
 @keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Initially hide the .nav-underline path */
+.nav-underline path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+/* Animate the .nav-underline path when hovering over the <a> element */
+.nav-item:hover .nav-underline path {
+    animation: drawUnderline 1s forwards;
+}
+
+@keyframes drawUnderline {
     to {
         stroke-dashoffset: 0;
     }

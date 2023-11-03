@@ -5,6 +5,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Noise from '../assets/noise.png';
 import Logo from '../assets/redlogo.svg?react';
+import NavUnderline from '../assets/navunderline.svg?react';
 const LandingPage = () => (
     <div className='custom-container'>
         <img src={Noise} className='noise-image mix-blend-screen' />
@@ -13,9 +14,24 @@ const LandingPage = () => (
                 <Logo />
             </div>
             <nav className='flex gap-10 font-Poppins text-md sm:text-xl p-4'>
-                <a href='#work'>Work</a>
-                <a href='#mystory'>My Story</a>
-                <a href='#contact'>Contact</a>
+                <a href='#work' className='nav-item flex flex-col items-center'>
+                    Work
+                    <NavUnderline />
+                </a>
+                <a
+                    href='#mystory'
+                    className='nav-item flex flex-col items-center'
+                >
+                    My Story
+                    <NavUnderline />
+                </a>
+                <a
+                    href='#contact'
+                    className='nav-item flex flex-col items-center'
+                >
+                    Contact
+                    <NavUnderline />
+                </a>
             </nav>
         </header>
         <div className='flex flex-col lg:gap-10'>

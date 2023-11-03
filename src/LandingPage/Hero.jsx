@@ -1,5 +1,5 @@
 import HeroDesktopImage from '../assets/HeroImage.png';
-import MobileHeroImage from '../assets/MobileHero.png';
+import MobileHeroImage from '../assets/MobileHero.jpg';
 import Arrow from '../assets/heroarrow.svg?react';
 const Hero = () => (
     <div className='flex justify-center relative'>

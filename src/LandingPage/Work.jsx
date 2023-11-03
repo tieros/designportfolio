@@ -25,7 +25,7 @@ const Work = () => {
                     <div className='hidden lg:flex basis-2/4 bg-[#f7f7ef] rounded-lg relative'>
                         <img
                             src={Paybud}
-                            className='hidden lg:flex absolute w-[350px] top-[-30px] left-[100px]'
+                            className='hidden lg:flex absolute w-[500px] top-[-30px] left-[30px]'
                             alt='paybud screenshot'
                         />
                     </div>
@@ -62,7 +62,7 @@ const Work = () => {
                     <div className='hidden lg:flex lg:basis-2/4 bg-[#f7f7ef] rounded-lg relative'>
                         <img
                             src={Lumea}
-                            className='hidden lg:flex absolute w-[500px] top-[-30px] left-[10px]'
+                            className='hidden lg:flex absolute w-[590px] top-[-30px] left-[10px]'
                             alt='paybud screenshot'
                         />
                     </div>
@@ -98,7 +98,7 @@ const Work = () => {
                     <div className='hidden lg:flex lg:basis-2/4 bg-[#f7f7ef] rounded-lg relative'>
                         <img
                             src={Sparky}
-                            className='hidden lg:flex absolute w-[600px] top-[50px] left-[-10px]'
+                            className='hidden lg:flex absolute w-[700px] top-[50px] left-[-10px]'
                             alt='paybud screenshot'
                         />
                     </div>
