@@ -15,7 +15,7 @@ const LandingPage = () => (
                     <Logo />
                 </a>
             </div>
-            <nav className='flex gap-2 sm:gap-10 justify-between sm:justify-center font-Poppins text-md sm:text-sm p-4  w-full whitespace-nowrap'>
+            <nav className='flex gap-2 sm:gap-10 justify-between sm:justify-center font-Poppins text-sm sm:text-base lg:text-xl p-4  w-full whitespace-nowrap'>
                 <a href='#home' className='sm:hidden'>
                     <Logo />
                 </a>

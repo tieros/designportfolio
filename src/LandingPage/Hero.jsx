@@ -2,7 +2,7 @@ import HeroDesktopImage from '../assets/HeroImage.png';
 import MobileHeroImage from '../assets/MobileHero.jpg';
 import Arrow from '../assets/heroarrow.svg?react';
 const Hero = () => (
-    <div className='flex justify-center relative'>
+    <div className='flex justify-center relative' id='home'>
         <div className='flex flex-col justify-center max-w-[800px] sm:gap-4 !2xl:gap-8'>
             <img
                 src={MobileHeroImage}
