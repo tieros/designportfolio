@@ -58,7 +58,7 @@ const Footer = () => (
             <img
                 src={Picture}
                 alt='picture of me and my dog Tiera'
-                className='self-end w-[120px] h-[158px]
+                className='self-end w-[160px] h-[198px]
             sm:w-[338px] sm:h-[409px]
             lg:w-[517px] lg:h-[635px] sm:ml-auto'
             />

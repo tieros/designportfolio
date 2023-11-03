@@ -15,7 +15,7 @@ const Work = () => {
             className='flex flex-col items-center work-section gap-8 lg:gap-16'
         >
             <div className='relative w-full flex justify-center h-[97px] sm:h-[110px] lg:h-[150px] gap-3'>
-                <div className='absolute top-[-20%] left-[15%] sm:left-[25%] lg:left-[30%] 2xl:left-[40%] w-10 sm:w-14 lg:w-16'>
+                <div className='absolute top-[-30%] left-[10%] sm:left-[25%] lg:left-[30%] 2xl:left-[40%] w-10 sm:w-14 lg:w-16'>
                     <ShineLine />
                 </div>
                 <h1>Work</h1>

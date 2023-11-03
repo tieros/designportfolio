@@ -9,11 +9,16 @@ import NavUnderline from '../assets/navunderline.svg?react';
 const LandingPage = () => (
     <div className='custom-container'>
         <img src={Noise} className='noise-image mix-blend-screen' />
-        <header className='flex justify-end sm:justify-center items-center sm:relative m-auto sticky top-0 bg-bg z-30 md:py-2 lg:py-6'>
-            <div className='absolute left-0'>
-                <Logo />
+        <header className='flex justify-end sm:justify-center items-center sm:relative m-auto sticky top-0 bg-bg z-30 md:pt-2 lg:pt-6'>
+            <div className='hidden sm:block absolute left-0'>
+                <a href='#home'>
+                    <Logo />
+                </a>
             </div>
-            <nav className='flex gap-10 font-Poppins text-md sm:text-xl p-4'>
+            <nav className='flex gap-2 sm:gap-10 justify-between sm:justify-center font-Poppins text-md sm:text-sm p-4  w-full whitespace-nowrap'>
+                <a href='#home' className='sm:hidden'>
+                    <Logo />
+                </a>
                 <a href='#work' className='nav-item flex flex-col items-center'>
                     Work
                     <NavUnderline />
@@ -35,7 +40,7 @@ const LandingPage = () => (
             </nav>
         </header>
         <div className='flex flex-col lg:gap-10'>
-            <Hero />
+            <Hero id='home' />
             <Work id='work' />
             <MyStory id='mystory' />
             <Contact id='contact' />
