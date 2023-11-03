@@ -17,12 +17,12 @@ import ComponentImg from './assets/components.png';
 import ComponentsShow from './assets/componentshow.png';
 import ThankYou from './assets/thankyou.png';
 import ImageSlider from './ImageSlider';
+import MainFunctions from './MainFunctions';
 const Paybud = () => {
     useEffect(() => {
         // Scroll to the top of the page when it loads
         window.scrollTo(0, 0);
     }, []);
-    const [activeMainFunc, setActiveMainFunc] = useState(1);
 
     const [scroll, setScroll] = useState(0);
 
@@ -62,8 +62,7 @@ const Paybud = () => {
                     <img src={Moodboard} className='w-[70vw]' />
                 </div>
             </section>
-
-            <section className='bg-[#F2F2F2] p-[5%]'>
+            {/* <section className='bg-[#F2F2F2] p-[5%]'>
                 <h2>| What Does PayBud Do?</h2>
                 <div className='flex gap-4 flex-wrap sm:flex-nowrap'>
                     <div className='flex basis-full sm:basis-1/2 gap-4 flex-col items-center mt-[80px]'>
@@ -124,8 +123,8 @@ const Paybud = () => {
                         ></div>
                     </div>
                 </div>
-            </section>
-
+            </section> */}
+            <MainFunctions />
             <section className='bg-[#F2F2F2] p-[5%]'>
                 <h2>| What you can also make with PayBud...</h2>
                 <img
@@ -159,12 +158,6 @@ const Paybud = () => {
             </section>
 
             <div className='bg-[#F2F2F2] flex justify-center'>
-                {/* <div className='video-container'>
-                    <img className='frame' src={Frame} alt='Frame Image' />
-                    <video autoPlay loop muted>
-                        <source src={SmallAnimation} type='video/mp4' />
-                    </video>
-                </div> */}
                 <img src={LogoShapes} className='w-[500px] z-10' />
             </div>
 

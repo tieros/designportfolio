@@ -32,7 +32,7 @@ const LumeaCaseStudy = () => {
                         className='max-w-[300px]'
                     />
                     <h2>Lumea App</h2>
-                    <div className='flex flex-col gap-4 max-w-[230px]'>
+                    <div className='flex flex-col gap-4 max-w-max'>
                         <div className='light-tag'>Redesign</div>
                         <div className='dark-tag'>UI/UX Case Study</div>
                     </div>
@@ -171,7 +171,7 @@ const LumeaCaseStudy = () => {
                     “warm”, and “soft” feeling.
                 </div>
                 <h5 className='py-[2%] color-sub-header'>Brand Colors</h5>
-                <div className='flex justify-evenly lg:justify-start lg:gap-12 mb-4'>
+                <div className='flex justify-evenly lg:justify-start lg:gap-12 mb-6'>
                     <div className='color-container'>
                         <div className='color-shape bg-[#FF9B89]'></div>
                         <h4>Primary</h4>

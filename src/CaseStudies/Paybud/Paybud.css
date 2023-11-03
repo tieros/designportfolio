@@ -3,13 +3,14 @@
         font-size: 48px !important;
         font-family: 'Open Sans';
         margin-bottom: 40px !important;
+        font-weight: 600;
 
         @media (max-width: 1024px) {
             font-size: 32px !important;
             margin-bottom: 24px !important;
         }
         @media (max-width: 640px) {
-            font-size: 24px !important;
+            font-size: 28px !important;
             margin-bottom: 24px !important;
         }
     }
@@ -93,18 +94,18 @@
 
 .wireframe-section {
     background: url('./assets/Lowfi.png');
-    background-size: 100vw 100vh;
+    background-size: 100vw 90vh;
     background-repeat: no-repeat;
     padding: 2%;
-    height: 100vh;
+    height: 90vh;
 
     @media (max-width: 1024px) {
-        background-size: 100vw 45vh;
-        height: 45vh;
+        background-size: 100vw 40vh;
+        height: 40vh;
     }
     @media (max-width: 420px) {
-        background-size: 100vw 35vh;
-        height: 35vh;
+        background-size: 100vw 30vh;
+        height: 30vh;
     }
 }
 
