@@ -86,7 +86,7 @@ const Sparky = () => {
                     <TitleDecor />
                     <h2>branding</h2>
                 </div>
-                <div className='flex items-center branding-wrapper px-[9.5%]'>
+                <div className='flex items-center branding-wrapper px-[9.5%] py-[9.5%] lg:py-0 flex-wrap sm:flex-nowrap flex-col-reverse sm:flex-row'>
                     <p className='basis-1/2'>
                         I chose the Luckiest Guy font family for the logo text
                         to match the playful, cartoonish design desired by the
