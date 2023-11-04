@@ -29,7 +29,7 @@ const Work = () => {
                             alt='paybud screenshot'
                         />
                     </div>
-                    <div className='bg-[#f7f7ef]  border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
+                    <div className='bg-[#f7f7ef] max-w-full border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg p-6 lg:p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
                         <div className='flex flex-col gap-5'>
                             <img
                                 src={Paybud}
@@ -45,7 +45,7 @@ const Work = () => {
                                 payment. Checkout the branding, flows,
                                 wireframes and prototypes.
                             </p>
-                            <div className='flex gap-3 justify-end'>
+                            <div className='flex gap-3 justify-end flex-wrap'>
                                 <Tag bgColor='bg-yellow'>Case Study</Tag>
                                 <Tag bgColor='bg-green'>Branding</Tag>
                                 <Tag bgColor='bg-blue'>Mobile App</Tag>
@@ -67,7 +67,7 @@ const Work = () => {
                             alt='paybud screenshot'
                         />
                     </div>
-                    <div className='bg-[#f7f7ef] border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
+                    <div className='bg-[#f7f7ef] max-w-full border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg p-6 lg:p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
                         <div className='flex flex-col gap-5'>
                             <img
                                 src={Lumea}
@@ -82,7 +82,7 @@ const Work = () => {
                                 app with a fresh and gender inclusive design,
                                 ensuring a clean and user-friendly experience.
                             </p>
-                            <div className='flex gap-3 justify-end'>
+                            <div className='flex gap-3 justify-end flex-wrap'>
                                 <Tag bgColor='bg-yellow'>Case Study</Tag>
                                 <Tag bgColor='bg-purple'>Redesign</Tag>
                                 <Tag bgColor='bg-blue'>Mobile App</Tag>
@@ -104,7 +104,7 @@ const Work = () => {
                             alt='paybud screenshot'
                         />
                     </div>
-                    <div className='bg-[#f7f7ef]  border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg  p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
+                    <div className='bg-[#f7f7ef] max-w-full border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg p-6 lg:p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
                         <div className='flex flex-col gap-5'>
                             <img
                                 src={Sparky}
@@ -119,7 +119,7 @@ const Work = () => {
                                 app with a fresh and gender inclusive design,
                                 ensuring a clean and user-friendly experience.
                             </p>
-                            <div className='flex gap-3 justify-end'>
+                            <div className='flex gap-3 justify-end flex-wrap'>
                                 <Tag bgColor='bg-blue'>Web App</Tag>
                                 <Tag bgColor='bg-pink'>Dashboard</Tag>
                                 <Tag bgColor='bg-purple'>Landing Page</Tag>
