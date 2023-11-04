@@ -246,7 +246,7 @@ const Paybud = () => {
                     <h2>| Signup Flow</h2>
                     <img
                         src={UserFlow}
-                        className='w-[90vw] relative h-auto lg:w-[900px] lg:h-[650px] z-10'
+                        className='w-[90vw] relative h-auto lg:w-full lg:h-auto z-10'
                     />
                     <img
                         src={BrowserIcon}

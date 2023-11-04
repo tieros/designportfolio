@@ -107,6 +107,10 @@
         background-size: 100vw 30vh;
         height: 30vh;
     }
+    @media (min-width: 1440px) {
+        background-size: 100vw 80vh;
+        height: 80vh;
+    }
 }
 
 .components-headers-wrapper {
