@@ -115,9 +115,11 @@ const Work = () => {
                                 Sparky
                             </h4>
                             <p className='font-Poppins'>
-                                Enhanced the Philips Lumea epilation tracking
-                                app with a fresh and gender inclusive design,
-                                ensuring a clean and user-friendly experience.
+                                Sparky, a web app design that harmonized the
+                                client&apos;s desire for a cartoonish, playful
+                                aesthetic in the landing page with a clean and
+                                user-friendly dashboard, all while ensuring
+                                consistent experience.
                             </p>
                             <div className='flex gap-3 justify-end flex-wrap'>
                                 <Tag bgColor='bg-blue'>Web App</Tag>
