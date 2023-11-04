@@ -6,6 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/redfavicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="/src/index.css" as="style">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
     href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
@@ -13,15 +14,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elifsu Design</title>
   <style>
-    .loading {
-      font-size: 60px;
+    .doggie-wrapper {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      /* Make it a flex container */
+      flex-direction: column;
+      /* Vertically center the contents */
+      height: 100vh;
+      /* Full viewport height */
+      margin: 0;
+      /* Remove default margin */
+    }
+
+    .doggie-red-bg {
+      width: 50vw;
+      max-width: 100%;
+      /* Ensure it doesn't exceed the viewport width */
+      margin: auto;
+      /* Center horizontally */
+    }
+
+    @media (max-width: 1024px) {
+      .doggie-wrapper {
+        background-size: 295px;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .doggie-wrapper {
+        background-size: 270px;
+        width: 100%;
+      }
+    }
+
+    .doggie {
+      width: 200px;
+      height: 150px;
+      z-index: 20;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      /* Center horizontally and vertically */
+    }
+
+    @media (max-width: 640px) {
+      .doggie {
+        width: 120px;
+      }
+    }
+
+    @keyframes arm1Animation {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(5px);
+      }
+    }
+
+    /* Apply the animation to 'arm1' with a 0.1s delay */
+    #arm1 {
+      animation: arm1Animation 500ms infinite 0.1s;
+    }
+
+    /* Define keyframes for arm2 animation */
+    @keyframes arm2Animation {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(5px);
+      }
+    }
+
+    /* Apply the animation to 'arm2' with a 0.2s delay */
+    #arm2 {
+      animation: arm2Animation 500ms infinite 0.2s;
     }
   </style>
 </head>
 
 <body>
   <div id="root">
-    <h1 class="loading">LOADING</h1>
+    <div class="doggie-wrapper">
+      <svg class="doggie-red-bg" width="425" height="410" viewBox="0 0 425 410" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M213.142 296.284C109.432 345.685 98.9496 487.654 34.251 351.83C-30.4476 216.006 1.17758 65.8506 104.888 16.4492C208.598 -32.9522 345.12 37.1073 409.819 172.932C474.518 308.756 316.852 246.882 213.142 296.284Z"
+          fill="#FF7262" />
+      </svg>
+      <svg class="doggie" width='130' height='109' view-box='0 0 130 109' fill='none'
+        xmlns='http://www.w3.org/2000/svg'>
+        <path
+          d='M65.1003 26.0347C63.4803 29.8647 54.4003 29.9247 48.5603 29.7947C42.7303 29.6647 41.3603 32.3247 41.3603 32.3247C36.7403 37.6247 42.0303 68.2947 46.3203 89.2047C46.5803 90.4847 46.8403 91.7347 47.0903 92.9347C40.5903 92.9747 35.0503 93.2247 34.5803 93.9447C33.4803 95.6047 32.3903 98.3547 34.0403 98.7947C34.2003 98.8547 34.3703 98.8747 34.5803 98.8747C35.1803 98.8747 40.5903 98.8647 48.3703 98.8547C48.3803 98.9147 48.4003 98.9847 48.4103 99.0447L11.7803 99.1047C12.6803 76.1247 14.7803 22.1747 14.8303 17.0847C14.9003 10.5947 20.8003 4.69473 29.8203 1.70473C38.8303 -1.27527 46.4203 5.99473 48.8203 8.64473C51.2203 11.3047 64.0703 9.55473 64.0703 9.55473C64.0703 9.55473 65.6203 9.42473 67.2403 11.8247C68.8703 14.2247 66.7303 22.2047 65.1003 26.0347Z'
+          stroke='#231F20' stroke-width='2' stroke-miterlimit='10' />
+        <path
+          d='M33.8395 14.4238C33.8395 14.4238 42.9195 43.9338 34.1595 44.9738C25.3995 46.0138 18.8495 46.5338 18.0695 38.8738C17.2895 31.2138 20.4095 16.3638 20.4095 16.3638'
+          stroke='#231F20' stroke-width='2' stroke-miterlimit='10' />
+        <path d='M42.21 13.9744C42.21 13.9744 45.78 15.2744 46.75 12.4844' stroke='#231F20' stroke-width='2'
+          stroke-miterlimit='10' />
+        <path
+          d='M61.0098 10.7249C61.0098 10.7249 63.4898 18.1949 66.7898 17.1349C69.5398 16.2549 65.0898 9.74489 63.5898 9.84489C62.0898 9.94489 61.0098 10.7149 61.0098 10.7149V10.7249Z'
+          fill='#231F20' stroke='#231F20' stroke-width='2' stroke-miterlimit='10' />
+        <path id='arm2'
+          d='M44.7695 78.8448C45.7695 78.8452 58.0095 75.165 61.6795 79.225C61.7095 79.265 61.7495 79.295 61.7795 79.335C64.0195 81.905 61.8295 86.015 58.5695 85.385C56.6595 85.015 53.9995 84.535 51.0095 84.105C44.9895 83.235 46.2495 83.5448 44.7695 78.8448Z'
+          stroke='#231F20' stroke-width='2' stroke-miterlimit='10' />
+        <path id='arm1'
+          d='M24.2698 80.1542C24.2698 80.1542 37.2898 77.5242 40.4198 81.7742C40.4498 81.8142 40.4798 81.8642 40.5098 81.9042C42.6298 84.8942 40.5598 89.6642 37.4698 88.9342C35.6598 88.5042 33.1398 87.9542 30.3098 87.4442C24.6098 86.4342 22.4098 86.8342 21.0098 81.3642'
+          stroke='#231F20' stroke-width='2' stroke-miterlimit='10' />
+        <path
+          d='M121.93 46.5957L116.49 98.6957C116.49 98.6957 71.7398 98.7957 48.3698 98.8557C40.5898 98.8557 35.1798 98.8757 34.5798 98.8757C34.3698 98.8757 34.1998 98.8557 34.0398 98.7957C32.3898 98.3557 33.4798 95.6057 34.5798 93.9457C35.0498 93.2257 40.5898 92.9757 47.0898 92.9357C47.3198 92.9257 47.5598 92.9257 47.7998 92.9257C57.5198 92.8757 69.0298 93.2657 69.0298 93.2657L72.3898 49.4957L121.93 46.5957Z'
+          stroke='#231F20' stroke-width='2' stroke-miterlimit='10' />
+        <path
+          d='M129 99.0039V107.618L49.8065 107.859L33.2396 107.907L1 108.004V99.3029L33.4951 99.2258L59.4954 99.1679L129 99.0039Z'
+          stroke='#231F20' stroke-width='2' stroke-miterlimit='10' />
+      </svg>
+    </div>
   </div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
