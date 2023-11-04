@@ -11,7 +11,7 @@ const Hero = () => (
             />
             <h1
                 id='mainTitle'
-                className='font-Lalezar text-center sm:text-left lg:mb-5'
+                className='font-Lalezar text-center sm:text-left mb-5'
             >
                 I love ui/ux design
             </h1>
