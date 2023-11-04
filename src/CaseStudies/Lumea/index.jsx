@@ -16,6 +16,7 @@ import Solution2 from './assets/sol2.png';
 import LumeaScreens from './assets/lumeascreens.png';
 import Findings from './assets/findings.png';
 import { useEffect } from 'react';
+import CaseStudyNavigation from '../../Components/CaseStudyNavigation';
 const LumeaCaseStudy = () => {
     useEffect(() => {
         // Scroll to the top of the page when it loads
@@ -381,6 +382,7 @@ const LumeaCaseStudy = () => {
             <section className='flex my-[4%] text-end justify-end'>
                 <h2>thank you for your time!</h2>
             </section>
+            <CaseStudyNavigation />
         </div>
     );
 };

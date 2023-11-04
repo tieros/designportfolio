@@ -14,6 +14,7 @@ import DashComponents from './assets/dashcomponents.png';
 import CookiesModal from './assets/cookiesmodal.png';
 import ThankYou from './assets/thankyousparky.png';
 import { useEffect } from 'react';
+import CaseStudyNavigation from '../../Components/CaseStudyNavigation';
 
 const Sparky = () => {
     useEffect(() => {
@@ -236,6 +237,7 @@ const Sparky = () => {
                     className='w-[60%] self-end'
                 />
             </div>
+            <CaseStudyNavigation />
         </div>
     );
 };

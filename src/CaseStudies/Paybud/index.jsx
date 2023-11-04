@@ -18,6 +18,8 @@ import ComponentsShow from './assets/componentshow.png';
 import ThankYou from './assets/thankyou.png';
 import ImageSlider from './ImageSlider';
 import MainFunctions from './MainFunctions';
+import CaseStudyNavigation from '../../Components/CaseStudyNavigation';
+
 const Paybud = () => {
     useEffect(() => {
         // Scroll to the top of the page when it loads
@@ -291,6 +293,7 @@ const Paybud = () => {
             </section>
             <ImageSlider />
             <img src={ThankYou} alt='thank you!' />
+            <CaseStudyNavigation />
         </div>
     );
 };
