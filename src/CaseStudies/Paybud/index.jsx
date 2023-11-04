@@ -264,7 +264,9 @@ const Paybud = () => {
                 />
             </div>
             <section className='bg-[#F2F2F2] wireframe-section'>
-                <h2>| Wireframes</h2>
+                <h2 className='text-[#F2F2F2] bg-black p-4 rounded-lg max-w-max'>
+                    | Wireframes
+                </h2>
             </section>
 
             <section className='bg-[#F2F2F2] p-[2%]'>
