@@ -16,7 +16,7 @@ const CaseStudyNavigation = () => {
         {
             name: 'Sparky',
             url: '/work/sparky',
-            imageSrc: '/src/assets/Sparky.png',
+            imageSrc: '/sparky.webp',
         },
         {
             name: 'Lumea',
