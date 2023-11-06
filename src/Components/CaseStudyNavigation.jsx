@@ -1,6 +1,7 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Button from './Button';
 import BackArrow from '../assets/backarrow.svg?react';
+
 const CaseStudyNavigation = () => {
     const location = useLocation();
     const currentPath = location.pathname;
@@ -10,7 +11,7 @@ const CaseStudyNavigation = () => {
         {
             name: 'Paybud',
             url: '/work/paybud',
-            imageSrc: '/src/assets/Paybud.png',
+            imageSrc: '/paybudhero.webp',
         },
         {
             name: 'Sparky',
