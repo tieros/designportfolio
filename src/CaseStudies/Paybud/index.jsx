@@ -1,5 +1,5 @@
 import HeroLogo from './assets/heropaybudlogo.svg?react';
-import HeroImg from './assets/heroimg.png';
+import HeroImg from '/paybud.webp';
 import Moodboard from './assets/moodboard.png';
 import { useState, useEffect } from 'react';
 import './Paybud.css';

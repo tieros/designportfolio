@@ -1,7 +1,7 @@
 import IconContainer from '../Components/IconContainer';
 import Instagram from '../assets/instagram.svg?react';
 import Twitter from '../assets/Twitter.svg?react';
-import Picture from '../assets/footerimage.png';
+import Picture from '../assets/footerimage.webp';
 import Heart from '../assets/heart.svg?react';
 const Footer = () => (
     <div>

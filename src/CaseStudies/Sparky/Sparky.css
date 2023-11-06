@@ -1,6 +1,11 @@
 .sparky-container {
     color: #1a1a1a;
     font-family: 'Poppins';
+    width: 100%;
+
+    @media (max-width: 640px) {
+        overflow: hidden;
+    }
     .hero {
         background: #ededed;
         width: 100%;

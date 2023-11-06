@@ -1,8 +1,8 @@
 import Button from '../Components/Button';
 import Tag from '../Components/Tag';
-import Paybud from '../assets/PayBud.png';
-import Lumea from '../assets/Lumea.png';
-import Sparky from '../assets/Sparky.png';
+import Paybud from '/paybud.webp';
+import Lumea from '/lumea.webp';
+import Sparky from '/sparky.webp';
 import ShineLine from '../assets/shineline.svg?react';
 
 import { useNavigate } from 'react-router-dom';
@@ -20,16 +20,16 @@ const Work = () => {
                 </div>
                 <h1>Work</h1>
             </div>
-            <div className='flex flex-col gap-12 lg:gap-32'>
+            <div className='flex flex-col gap-12 lg:gap-32 px-4'>
                 <div className='flex justify-center lg:gap-6'>
                     <div className='hidden lg:flex basis-2/4 bg-[#f7f7ef] rounded-lg relative'>
                         <img
                             src={Paybud}
-                            className='hidden lg:flex absolute w-[500px] top-[-30px] left-[30px]'
+                            className='hidden lg:flex absolute w-[350px] top-[-30px] left-[80px]'
                             alt='paybud screenshot'
                         />
                     </div>
-                    <div className='bg-[#f7f7ef] max-w-full border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg p-6 lg:p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
+                    <div className='bg-[#f7f7ef] max-w-full border-[#dcdcdc] border lg:border-none lg:bg-bg rounded-lg p-6 lg:p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
                         <div className='flex flex-col gap-5'>
                             <img
                                 src={Paybud}
@@ -63,11 +63,11 @@ const Work = () => {
                     <div className='hidden lg:flex lg:basis-2/4 bg-[#f7f7ef] rounded-lg relative'>
                         <img
                             src={Lumea}
-                            className='hidden lg:flex absolute w-[590px] top-[-30px] left-[10px]'
+                            className='hidden lg:flex absolute w-[580px] bottom-0 left-[10px]'
                             alt='paybud screenshot'
                         />
                     </div>
-                    <div className='bg-[#f7f7ef] max-w-full border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg p-6 lg:p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
+                    <div className='bg-[#f7f7ef] max-w-full border-[#dcdcdc] border lg:border-none lg:bg-bg rounded-lg p-6 lg:p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
                         <div className='flex flex-col gap-5'>
                             <img
                                 src={Lumea}
@@ -100,11 +100,11 @@ const Work = () => {
                     <div className='hidden lg:flex lg:basis-2/4 bg-[#f7f7ef] rounded-lg relative'>
                         <img
                             src={Sparky}
-                            className='hidden lg:flex absolute w-[700px] top-[50px] left-[-10px]'
+                            className='hidden lg:flex absolute w-[700px] top-[50px] left-0'
                             alt='paybud screenshot'
                         />
                     </div>
-                    <div className='bg-[#f7f7ef] max-w-full border-black border-2 shadow-tag lg:border-none lg:shadow-none lg:bg-bg rounded-lg p-6 lg:p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
+                    <div className='bg-[#f7f7ef] max-w-full border-[#dcdcdc] border lg:border-none lg:bg-bg rounded-lg p-6 lg:p-10 basis-full lg:basis-2/4 flex flex-col lg:px-[60px] gap-10'>
                         <div className='flex flex-col gap-5'>
                             <img
                                 src={Sparky}
