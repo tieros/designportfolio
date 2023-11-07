@@ -49,7 +49,7 @@ const Contact = () => (
                         <a
                             target='_blank'
                             rel='noopener noreferrer'
-                            href='https://www.dribble.com/elifsudesign'
+                            href='https://www.dribbble.com/elifsudesign'
                         >
                             <Dribble />
                         </a>
