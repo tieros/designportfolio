@@ -442,3 +442,14 @@ a {
     background: rgba(251, 250, 246, 0.2);
     box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.18);
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 8px;
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #d1d1d1;
+    border-radius: 8px;
+}
