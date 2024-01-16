@@ -22,8 +22,13 @@ import Feature2Desktop from './assets/feature2desktop.webp';
 import Feature2Mobile from './assets/feature2mobile.webp';
 import Feature3 from './assets/feature3.webp';
 import Feature4 from './assets/feature4.webp';
+import { useEffect } from 'react';
 
 const Notex = () => {
+    useEffect(() => {
+        // Scroll to the top of the page when it loads
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className='notex-container'>
             <section className='hero-container w-full lg:h-[60vh] flex pt-[2%] flex-col lg:flex-row'>
