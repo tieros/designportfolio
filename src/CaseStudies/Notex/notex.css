@@ -1,0 +1,290 @@
+.notex-container {
+    --green-950: #0b0e0b;
+    padding: 16px;
+    font-family: Segoe UI !important;
+    max-width: 1440px;
+    margin: auto;
+    background-color: #fffffc;
+
+    section {
+        padding: 5vw;
+    }
+
+    h2 {
+        @media (max-width: 767px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 400;
+
+        @media (max-width: 1024px) {
+            font-size: 24px;
+        }
+    }
+
+    .hero-container {
+        background: linear-gradient(
+                135deg,
+                rgba(210, 224, 227, 0.5) 1.8%,
+                rgba(217, 227, 210, 0.5) 36.53%,
+                rgba(236, 230, 180, 0.5) 76.8%,
+                rgba(223, 210, 227, 0.5) 98.45%
+            ),
+            #fff;
+        border-radius: 22px 22px 0 0;
+        padding: 12px;
+
+        @media (max-width: 1024px) {
+            border-radius: 16px 16px 0 0;
+        }
+
+        .hero-tag {
+            border-radius: 7px;
+            background: #f9f8f6;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.13) inset;
+            padding: 16px 24px;
+            color: var(--green-950);
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .project-overview-card {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        color: var(--green-950);
+
+        @media (min-width: 1024px) {
+            width: 200px;
+            height: 120px;
+        }
+
+        h5 {
+            font-weight: 600;
+        }
+
+        span {
+            font-size: 12px;
+            font-style: normal;
+            letter-spacing: 0.36px;
+        }
+    }
+    .project-overview-card-container {
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+
+    .design-process-container {
+        background: url('./assets/designprocessbg.webp');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        color: var(--green-950);
+
+        @media (min-width: 1024px) {
+            padding: 7vw 14vw;
+        }
+    }
+
+    .design-process-card {
+        h4 {
+            font-weight: 700;
+            margin-bottom: 8px;
+            font-size: large;
+        }
+    }
+
+    .interview-question-container {
+        background: var(--stone-100, #e7e7e4);
+        box-shadow: 0px 1px 16px 0px rgba(216, 216, 216, 0.25);
+        display: inline-flex;
+        padding: 16px 24px;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.48px;
+        font-size: 16px;
+        border-radius: 6px;
+        @media (max-width: 1024px) {
+            font-size: 12px;
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    .user-mode-col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 32px;
+        border-radius: 6px;
+        min-width: 220px;
+
+        li:before {
+            content: '•  ';
+            font-size: 10pt;
+        }
+
+        .column-icon {
+            filter: drop-shadow(0px 1px 9.2px rgba(0, 0, 0, 0.15));
+            margin-bottom: 4px;
+        }
+
+        h6 {
+            font-weight: 600;
+            font-size: 24px;
+        }
+    }
+
+    .define-text {
+        color: #000;
+        text-align: justify;
+        font-family: Segoe UI;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 153.008%; /* 24.481px */
+        letter-spacing: 0.48px;
+        padding: 3% 6%;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    .colors-container {
+        div {
+            border-radius: 14px;
+            max-width: 162px;
+            max-height: 146px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            width: 100%;
+            height: 100%;
+            padding: 16px;
+        }
+    }
+
+    .problems-cont {
+        .custom-flex-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .custom-flex-header {
+            display: flex;
+        }
+
+        .custom-heading {
+            font-size: 1.3rem;
+            font-weight: 600;
+            min-width: 268px;
+            @media (max-width: 768px) {
+                min-width: 132px;
+            }
+        }
+
+        .custom-flex-body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .custom-box {
+            display: flex;
+            align-items: center;
+            min-width: 240px;
+            border-radius: 6px;
+            background: rgba(249, 248, 246, 0.94);
+            box-shadow: 0px 1px 4px 0px rgba(182, 182, 182, 0.25);
+            padding: 24px;
+            font-size: 16px;
+            margin-right: 24px;
+
+            @media (max-width: 768px) {
+                min-width: 120px;
+                margin-right: 12px;
+            }
+        }
+
+        .custom-flex-grow-box {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            border-radius: 6px;
+            background: rgba(249, 248, 246, 0.94);
+            box-shadow: 0px 1px 4px 0px rgba(182, 182, 182, 0.25);
+            padding: 24px;
+            font-size: 16px;
+        }
+    }
+
+    .feature-title {
+        font-size: 32px;
+        font-weight: 500;
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+    .features-section {
+        p {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 350;
+            line-height: normal;
+            letter-spacing: 0.6px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    .test-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        p {
+            font-size: 20px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 12px;
+
+            @media (max-width: 768px) {
+                font-size: 20px;
+            }
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+    }
+}
