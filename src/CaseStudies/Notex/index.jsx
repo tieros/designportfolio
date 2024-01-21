@@ -12,7 +12,7 @@ import GeneralIcon from './assets/generalicon.svg?react';
 import ProductiveIcon from './assets/productiveicon.svg?react';
 import DesignIcon from './assets/designicon.svg?react';
 import CodeIcon from './assets/codeicon.svg?react';
-import ColorsTypographyDesktop from './assets/ColorsTypographyDesktop.webp';
+import ColorsTypographyDesktop from './assets/colorsyypographydesktop.webp';
 import ColorsTypographyMobile from './assets/ColorsTypographyMobile.webp';
 import Hifi1 from './assets/hifi1.webp';
 import Hifi2 from './assets/hifi2.webp';
